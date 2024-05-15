@@ -1,23 +1,35 @@
 .navbar {
-  background: red;
-  height: 60px;
+  background: #266f8c;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 .nav_logo {
   font-weight: bold;
   font-size: 20px;
-  margin: 15px;
-  color: aliceblue;
+  margin-left: 20px;
+}
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings: "wdth" 100;
+  color: #0b1e26;
 }
 
 .nav_items a {
   margin: 15px;
-  color: aliceblue;
+  color: #0b1e26;
   position: relative;
   text-decoration: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
 }
 
 .nav_toggle {
@@ -25,10 +37,14 @@
 }
 
 @media (max-width: 768px) {
-  .nav_items {
-    background: red;
+  .navbar {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
+  }
+  .nav_items {
+    display: flex;
+    flex-direction: column;
   }
 }

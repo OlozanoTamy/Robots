@@ -1,14 +1,12 @@
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import Content from "../../Components/Content";
-const Home = () => {
+function Contact() {
   return (
-    <>
+    <div>
       <Navbar />
-      <Content />
       <Footer />
-    </>
+    </div>
   );
-};
+}
 
-export default Home;
+export default Contact;
